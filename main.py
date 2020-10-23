@@ -46,4 +46,39 @@ def oval(x, y, radius, angle, color):
     turtle.circle(radius / 2, 90)
     turtle.end_fill()
 
+def octagon(x, y, side, angle, color):
+    '''
+    Function, drawing octagon
+    :param x: upper left corner coordinate X
+    :param y: upper left corner coordinate Y
+    :param side: side length of a octagon
+    :param angle: orientation change
+    :param color: color of a octagon frame and fill
+    :return: None
+    ToDo: Evdischenko
+    '''
+    turtle.home()
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.color(color, color)
+    turtle.down()
+    turtle.begin_fill()
+    turtle.right(angle)
+    turtle.forward(side)
+    turtle.right(360 / 8)
+    turtle.forward(side)
+    turtle.right(360 / 8)
+    turtle.forward(side)
+    turtle.right(360 / 8)
+    turtle.forward(side)
+    turtle.right(360 / 8)
+    turtle.forward(side)
+    turtle.right(360 / 8)
+    turtle.forward(side)
+    turtle.right(360 / 8)
+    turtle.forward(side)
+    turtle.right(360 / 8)
+    turtle.forward(side)
+    turtle.right(360 / 8)
+    turtle.end_fill()
 
