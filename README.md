@@ -12,10 +12,9 @@ list of all functions of simple figures:
 8.   *parallelogram* -- параллелограм
 9.   *triangle90* -- прямоугольный треугольник
 
->  Made by:
+***
 
->  Evdischenko Maria
-
->  Seledtsov Alexey
-
->  Marinkin Oleg
+Made by:
+  Evdischenko Maria
+  Seledtsov Alexey
+  Marinkin Oleg
