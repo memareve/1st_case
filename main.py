@@ -294,7 +294,7 @@ def rabbit():
     turtle.shape('turtle')
     turtle.speed(10)
     triangle90(-960, 120, 100, 0, 'purple')
-    triangle90(-958, 170, 50, 180, 'magenta')
+    triangle90(-858, 195, 75, 90, 'magenta')
 
     pass
 
@@ -302,6 +302,5 @@ def rabbit():
 rabbit()
 turtle.up()
 rocket()
-
 
 turtle.done()
