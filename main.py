@@ -1,3 +1,10 @@
+# Case-study #1
+# Developers: Marinkin O. (),
+# Seledtsov A. (),
+# Evdischenko M. ()
+
+import turtle
+
 def circle(x, y, radius, angle, color):
     '''
     Function, drawing circle
@@ -81,4 +88,3 @@ def octagon(x, y, side, angle, color):
     turtle.forward(side)
     turtle.right(360 / 8)
     turtle.end_fill()
-
