@@ -1,5 +1,4 @@
-# case
-## NSU 1st case 20704
+# NSU 1st case 20704
 
 list of all functions of simple figures:
 1.   *square* -- квадрат
@@ -13,7 +12,6 @@ list of all functions of simple figures:
 9.   *triangle90* -- прямоугольный треугольник
 
 ***
-
 Made by:
 *  Evdischenko Maria
 *   Seledtsov Alexey
