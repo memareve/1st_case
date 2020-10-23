@@ -1,16 +1,25 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+def trapeze(x, y, side, angle, color):
+    '''
+    Function, drawing trapeze
+    :param x: upper left corner coordinate X
+    :param y: upper left corner coordinate Y
+    :param side: side length of a trapeze
+    :param angle: the mounting angle of a trapeze
+    :param color: color of a trapeze frame and fill
+    :return: None
+    ToDo: Marinkin
+    '''
+    turtle.home()
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.color(color, color)
+    turtle.down()
+    turtle.begin_fill()
+    turtle.right(angle)
+    turtle.forward(side)
+    turtle.left(60)
+    turtle.forward(side)
+    turtle.left(60)
+    turtle.forward(side)
+    turtle.end_fill()
+    turtle.up()
