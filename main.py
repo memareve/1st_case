@@ -1,16 +1,31 @@
-# This is a sample Python script.
+import math
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def square(x, y, side, angle, color):
+    '''
+    Function, drawing square
+    :param x: upper left corner coordinate X
+    :param y: upper left corner coordinate Y
+    :param side: side length of a square
+    :param angle: the mounting angle of a square
+    :param color: color of a square frame and fill
+    :return: None
+    ToDo: Seledtsov
+    '''
+    turtle.home()
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.color(color, color)
 
+    turtle.down()
+    turtle.begin_fill()
+    turtle.right(angle)
+    turtle.forward(side)
+    turtle.right(90)
+    turtle.forward(side)
+    turtle.right(90)
+    turtle.forward(side)
+    turtle.right(90)
+    turtle.forward(side)
+    turtle.right(90)
+    turtle.end_fill()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
