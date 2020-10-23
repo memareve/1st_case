@@ -29,7 +29,7 @@ def circle(x, y, radius, angle, color):
     turtle.left(angle)
     turtle.circle(radius)
     turtle.end_fill()
-    turtle.done()
+    turtle.up()
 
     
 def oval(x, y, radius, angle, color):
@@ -56,6 +56,7 @@ def oval(x, y, radius, angle, color):
     turtle.circle(radius, 90)
     turtle.circle(radius / 2, 90)
     turtle.end_fill()
+    turtle.up()
 
     
 def octagon(x, y, side, angle, color):
@@ -93,9 +94,10 @@ def octagon(x, y, side, angle, color):
     turtle.forward(side)
     turtle.right(360 / 8)
     turtle.end_fill()
+    turtle.up()
     
     
-    def trapeze(x, y, side, angle, color):
+def trapeze(x, y, side, angle, color):
     '''
     Function, drawing trapeze
     :param x: upper left corner coordinate X
@@ -178,6 +180,7 @@ def square(x, y, side, angle, color):
     turtle.forward(side)
     turtle.right(90)
     turtle.end_fill()
+    turtle.up()
 
     
 def rectangle(x, y, width, length, angle, color):
@@ -209,6 +212,7 @@ def rectangle(x, y, width, length, angle, color):
     turtle.forward(length)
     turtle.right(90)
     turtle.end_fill()
+    turtle.up()
 
     
 def parallelogram(x, y, width, length, angle, color):
@@ -241,6 +245,7 @@ def parallelogram(x, y, width, length, angle, color):
     turtle.forward(length)
     turtle.left(120)
     turtle.end_fill()
+    turtle.up()
 
     
 def triangle90(x, y, side, angle, color):
@@ -268,3 +273,4 @@ def triangle90(x, y, side, angle, color):
     turtle.left(135)
     turtle.forward(math.sqrt((side ** 2) + (side ** 2)))
     turtle.end_fill()
+    turtle.up()
