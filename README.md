@@ -13,6 +13,9 @@ list of all functions of simple figures:
 9.   *triangle90* -- прямоугольный треугольник
 
 >  Made by:
-  >  Evdischenko Maria
-  >  Seledtsov Alexey
-  >  Marinkin Oleg
+
+>  Evdischenko Maria
+
+>  Seledtsov Alexey
+
+>  Marinkin Oleg
