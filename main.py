@@ -62,3 +62,39 @@ def rectangle(x, y, width, length, angle, color):
     turtle.end_fill()
 
 
+def parallelogram(x, y, width, length, angle, color):
+    '''
+    Function, drawing parallelogram
+    :param x: upper left corner
+
+    coordinate X
+    :param y: upper left corner coordinate Y
+    :param width: side width of a parallelogram
+    :param length: side length of a parallelogram
+    :param angle: the mounting angle of a parallelogram
+    :param color: color of a parallelogram frame and fill
+    :return: None
+    ToDo: Seledtsov
+    '''
+    turtle.home()
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.color(color, color)
+
+    turtle.down()
+    turtle.begin_fill()
+    turtle.right(angle)
+    turtle.forward(width)
+    turtle.left(60)
+    turtle.forward(length)
+    turtle.left(120)
+    turtle.forward(width)
+    turtle.left(60)
+    turtle.forward(length)
+    turtle.left(120)
+    turtle.end_fill()
+
+
+
+
+
