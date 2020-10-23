@@ -29,7 +29,7 @@ def circle(x, y, radius, angle, color):
     turtle.left(angle)
     turtle.circle(radius)
     turtle.end_fill()
-    turtle.done()
+    turtle.up()
 
     
 def oval(x, y, radius, angle, color):
@@ -56,6 +56,7 @@ def oval(x, y, radius, angle, color):
     turtle.circle(radius, 90)
     turtle.circle(radius / 2, 90)
     turtle.end_fill()
+    turtle.up()
 
     
 def octagon(x, y, side, angle, color):
@@ -93,9 +94,10 @@ def octagon(x, y, side, angle, color):
     turtle.forward(side)
     turtle.right(360 / 8)
     turtle.end_fill()
+    turtle.up()
     
     
-    def trapeze(x, y, side, angle, color):
+def trapeze(x, y, side, angle, color):
     '''
     Function, drawing trapeze
     :param x: upper left corner coordinate X
@@ -178,6 +180,7 @@ def square(x, y, side, angle, color):
     turtle.forward(side)
     turtle.right(90)
     turtle.end_fill()
+    turtle.up()
 
     
 def rectangle(x, y, width, length, angle, color):
@@ -209,6 +212,7 @@ def rectangle(x, y, width, length, angle, color):
     turtle.forward(length)
     turtle.right(90)
     turtle.end_fill()
+    turtle.up()
 
     
 def parallelogram(x, y, width, length, angle, color):
@@ -241,6 +245,7 @@ def parallelogram(x, y, width, length, angle, color):
     turtle.forward(length)
     turtle.left(120)
     turtle.end_fill()
+    turtle.up()
 
     
 def triangle90(x, y, side, angle, color):
@@ -268,3 +273,35 @@ def triangle90(x, y, side, angle, color):
     turtle.left(135)
     turtle.forward(math.sqrt((side ** 2) + (side ** 2)))
     turtle.end_fill()
+    turtle.up()
+
+
+def rocket():
+    turtle.shape('turtle')
+    turtle.speed(10)
+    triangle60(-830, -430, 140, 270, 'tomato')
+    rectangle(-828, -130, 200, 300, 0, 'darkgrey')
+    triangle60(-626, -290, 140, 90, 'tomato')
+    triangle60(-828, -128, 200, 0, 'tomato')
+    circle(-750, -200, 30, 300, 'white')
+    circle(-750, -300, 30, 300, 'white')
+    circle(-750, -400, 30, 300, 'white')
+    trapeze(-655, -492, 70, 240, 'orange')
+    pass
+
+
+def rabbit():
+    turtle.shape('turtle')
+    turtle.speed(10)
+    triangle90(-960, 120, 100, 0, 'purple')
+    triangle90(-958, 170, 50, 180, 'magenta')
+
+    pass
+
+
+rabbit()
+turtle.up()
+rocket()
+
+
+turtle.done()
