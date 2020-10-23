@@ -1,16 +1,22 @@
-# This is a sample Python script.
+def circle(x, y, radius, angle, color):
+    '''
+    Function, drawing circle
+    :param x: coordinate X of point on the side of the circle
+    :param y: coordinate Y of point on the side of the circle
+    :param radius: radius of a circle
+    :param angle: orientation change
+    :param color: color of a circle frame and fill
+    :return: None
+    ToDo: Evdischenko
+    '''
+    turtle.home()
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.color(color, color)
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    turtle.down()
+    turtle.begin_fill()
+    turtle.left(angle)
+    turtle.circle(radius)
+    turtle.end_fill()
+    turtle.done()
