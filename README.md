@@ -15,6 +15,6 @@ list of all functions of simple figures:
 ***
 
 Made by:
-  Evdischenko Maria
-  Seledtsov Alexey
-  Marinkin Oleg
+   Evdischenko Maria
+   Seledtsov Alexey
+   Marinkin Oleg
