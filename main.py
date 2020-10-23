@@ -95,6 +95,34 @@ def parallelogram(x, y, width, length, angle, color):
     turtle.end_fill()
 
 
+def triangle90(x, y, side, angle, color):
+    '''
+    Function, drawing triangle with an angle of 90 degrees
+    :param x: upper left corner coordinate X
+    :param y: upper left corner coordinate Y
+    :param side: length of side of a triangle
+    :param angle: the mounting angle of a triangle
+    :param color: color of a triangle frame and fill
+    :return: None
+    ToDo: Seledtsov
+    '''
+    turtle.home()
+    turtle.up()
+    turtle.setposition(x, y)
+
+    turtle.down()
+    turtle.color(color, color)
+    turtle.begin_fill()
+    turtle.right(angle)
+    turtle.forward(side)
+    turtle.left(90)
+    turtle.forward(side)
+    turtle.left(135)
+    turtle.forward(math.sqrt((side ** 2) + (side ** 2)))
+    turtle.end_fill()
+
+
+
 
 
 
