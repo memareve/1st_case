@@ -11,6 +11,15 @@ list of all functions of simple figures:
 8.   *parallelogram* -- параллелограм
 9.   *triangle90* -- прямоугольный треугольник
 
+list of all functions of pictures:
+1.  rocet
+2.  rabbit
+3.  robot
+4.  bull
+5.  sword
+6.  man_on_horse
+
+
 ***
 Made by:
 *  Evdischenko Maria
