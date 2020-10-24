@@ -12,7 +12,7 @@ list of all functions of simple figures:
 9.   *triangle90* -- прямоугольный треугольник
 
 list of all functions of pictures:
-1.  *rocet*
+1.  *rocket*
 2.  *rabbit*
 3.  *robot*
 4.  *bull*
