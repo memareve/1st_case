@@ -287,3 +287,19 @@ def sword():
     pass
 
 
+def man_on_horse():
+    '''
+    Function, drawing sword
+    :return: None
+    ToDo: Evdischenko
+    '''
+    triangle90(800, 300, 55, 90, '#de584d')
+    triangle90(680, 180, 120, 0, '#2a6779')
+    triangle90(735, 125, 55, -90, '#374d5b')
+    triangle90(715, 215, 120, -180, '#4ab19c')
+    parallelogram(595, 215, 55, 100, -160, '#fb9728')
+    triangle90(626, 306, 90, 90, '#feb836')
+    circle(626, 305, 35, -15, '#b5c3c6')
+    trapeze(664, 384, 45, 220, '#374d5b')
+    hexagon(810, 270, 5, 0, '#374d5b')
+    pass
