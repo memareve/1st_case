@@ -313,9 +313,54 @@ def rabbit():
     parallelogram(-653, 439, 70, 70, 240, 'lime')
     turtle.home()
     pass
+  
+  
+  def robot():
+    '''
+    Function, drawing robot
+    :return: None
+    ToDo: Marinkin
+    '''
+    turtle.speed(10)
+    triangle60(-40, -500, 20, 0, 'blue')
+    triangle60(40,  -500, 20, 0, 'blue')
+    rectangle(-38, -415, 15, 70, 0, 'red')
+    turtle.up()
+    rectangle(42, -415, 15, 70, 0, 'red')
+    turtle.up()
+    square(-65, -270,150,0,"blue")
+    turtle.up()
+    rectangle(-137, -260, 290, 10, 0, 'red')
+    turtle.up()
+    circle(-100, -310, 20, 0, 'blue')
+    rectangle(-110, -310, 20, 50, 0, 'red')
+    circle(-100, -400, 20, 0, 'blue')
+    circle(120, -310, 20, 0, 'blue')
+    rectangle(110, -310, 20, 50, 0, 'red')
+    circle(120, -400, 20, 0, 'blue')
+    square(-15, -210, 50, 0, 'blue')
+    trapeze(49,-210, 40, 240, 'red' )
+    circle(-2, -230, 3, 0, "black")
+    circle(25, -230, 3, 0, "black")
+    square(10, -280, 8, 45, 'black')
+    square(10, -300, 8, 45, 'black')
+    square(10, -320, 8, 45, 'black')
+    square(10, -340, 8, 45, 'black')
 
 
-#drawing images:
-rocket()
-rabbit()
-turtle.done()
+
+def bull():
+    '''
+    Function, drawing bull
+    :return: None
+    ToDo: Marinkin
+    '''
+    turtle.speed(10)
+    triangle90(0, 100, 100, -45, "black")
+    triangle90(129, 112, 80, -135, 'red')
+    triangle90(146, 100, 100, -90, 'black' )
+    parallelogram(147, 190, 65, 15, 50, 'yellow')
+    square(-62, 260, 60, 0, 'red')
+    oval(-65, 280, 20, 90, 'grey')
+    oval(5, 275, 20, -25, 'orange')
+    turtle.up()
