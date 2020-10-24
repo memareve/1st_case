@@ -292,6 +292,10 @@ def rocket():
     circle(-750, -300, 30, 300, 'white')
     circle(-750, -400, 30, 300, 'white')
     trapeze(-655, -492, 70, 240, 'orange')
+    turtle.goto(-765, 70)
+    turtle.pencolor('black')
+    turtle.write('This is a rocket')
+    turtle.home()
     pass
 
 
@@ -308,8 +312,11 @@ def rabbit():
     triangle90(-691, 260, 140, 180, 'yellow')
     triangle90(-831, 262, 140, 0, 'red')
     triangle60(-688, 297, 70, 90, 'magenta')
-    square(-688, 437, 70, 0, 'orangered')
+    square(-688, 437, 70, 0, 'orange')
     parallelogram(-653, 439, 70, 70, 240, 'lime')
+    turtle.goto(-890, 395)
+    turtle.pencolor('black')
+    turtle.write('This is a rabbit')
     turtle.home()
     pass
 
