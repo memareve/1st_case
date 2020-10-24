@@ -276,6 +276,11 @@ def triangle90(x, y, side, angle, color):
     turtle.up()
 
 def robot():
+    '''
+    Function, drawing robot
+    :return: None
+    ToDo: Marinkin
+    '''
     turtle.speed(10)
     triangle60(-40, -500, 20, 0, 'blue')
     triangle60(40,  -500, 20, 0, 'blue')
@@ -305,6 +310,11 @@ def robot():
 
 
 def bull():
+    '''
+    Function, drawing bull
+    :return: None
+    ToDo: Marinkin
+    '''
     turtle.speed(10)
     triangle90(0, 100, 100, -45, "black")
     triangle90(129, 112, 80, -135, 'red')
