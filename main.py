@@ -261,4 +261,29 @@ def triangle90(x, y, side, angle, color):
     turtle.forward(math.sqrt((side ** 2) + (side ** 2)))
     turtle.end_fill()
     turtle.up()
-    turtle.up()
+
+
+def sword():
+    '''
+    Function, drawing sword
+    :return: None
+    ToDo: Evdischenko
+    '''
+    turtle.speed(5)
+    trapeze(680, -20, 65, 60, '#fb9728')
+    hexagon(745, -60, 15, 0, '#374d5b')
+    hexagon(720, -55, 7, 0, '#2a6779')
+    hexagon(770, -55, 7, 0, '#4ab19c')
+    rectangle(800, -71, 70, 110, 90, '#4ab19c')
+    triangle90(870, -71, 70, 180, '#374d5b')
+    triangle90(620, -141, 70, 0, '#b5c3c6')
+    triangle90(800, -141, 110, 180, '#de584d')
+    triangle90(730, -210, 70, 0, '#2a6779')
+    triangle90(690, -250, 40, 0, '#feb836')
+    rectangle(800, -210, 40, 70, 90, '#b5c3c6')
+    triangle90(770, -251, 80, 180, '#fb9728')
+    oval(710, -380, 15, 45, '#de584d')
+    oval(720, -350, 7, 45, '#de584d')
+    pass
+
+
