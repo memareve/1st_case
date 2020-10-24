@@ -59,14 +59,14 @@ def oval(x, y, radius, angle, color):
     turtle.up()
 
     
-def octagon(x, y, side, angle, color):
+def hexagon(x, y, radius, angle, color):
     '''
-    Function, drawing octagon
+    Function, drawing hexagon
     :param x: upper left corner coordinate X
     :param y: upper left corner coordinate Y
-    :param side: side length of a octagon
+    :param radius: radius of the circumscribed circle of a hexagon
     :param angle: orientation change
-    :param color: color of a octagon frame and fill
+    :param color: color of a hexagon frame and fill
     :return: None
     ToDo: Evdischenko
     '''
@@ -74,29 +74,15 @@ def octagon(x, y, side, angle, color):
     turtle.up()
     turtle.setposition(x, y)
     turtle.color(color, color)
+
     turtle.down()
     turtle.begin_fill()
     turtle.right(angle)
-    turtle.forward(side)
-    turtle.right(360 / 8)
-    turtle.forward(side)
-    turtle.right(360 / 8)
-    turtle.forward(side)
-    turtle.right(360 / 8)
-    turtle.forward(side)
-    turtle.right(360 / 8)
-    turtle.forward(side)
-    turtle.right(360 / 8)
-    turtle.forward(side)
-    turtle.right(360 / 8)
-    turtle.forward(side)
-    turtle.right(360 / 8)
-    turtle.forward(side)
-    turtle.right(360 / 8)
+    turtle.circle(radius, 360, 6)
     turtle.end_fill()
     turtle.up()
-    
-    
+
+
 def trapeze(x, y, side, angle, color):
     '''
     Function, drawing trapeze
@@ -112,6 +98,7 @@ def trapeze(x, y, side, angle, color):
     turtle.up()
     turtle.setposition(x, y)
     turtle.color(color, color)
+
     turtle.down()
     turtle.begin_fill()
     turtle.right(angle)
@@ -273,4 +260,5 @@ def triangle90(x, y, side, angle, color):
     turtle.left(135)
     turtle.forward(math.sqrt((side ** 2) + (side ** 2)))
     turtle.end_fill()
+    turtle.up()
     turtle.up()
