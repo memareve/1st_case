@@ -306,13 +306,13 @@ def robot():
 
 def bull():
     turtle.speed(10)
-    triangle90(0, 200, 60, -45, "black")
-    triangle90(72, 212, 40, -135, 'red')
-    triangle90(87, 200, 60, -90, 'black' )
-    parallelogram(90, 250, 35, 15, 30, 'yellow')
-    square(-32, 295, 30, 0, 'red')
-    oval(-35, 300, 10, 90, 'grey')
-    oval(5, 300, 10, -30, 'orange')
+    triangle90(0, 100, 100, -45, "black")
+    triangle90(129, 112, 80, -135, 'red')
+    triangle90(146, 100, 100, -90, 'black' )
+    parallelogram(147, 190, 65, 15, 50, 'yellow')
+    square(-62, 260, 60, 0, 'red')
+    oval(-65, 280, 20, 90, 'grey')
+    oval(5, 275, 20, -25, 'orange')
     turtle.up()
 
 
