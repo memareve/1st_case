@@ -1,7 +1,7 @@
 # Case-study #1
 # Developers: Marinkin O. (),
 # Seledtsov A. (),
-# Evdischenko M. ()
+# Evdischenko M. (55%)
 
 
 import turtle
@@ -383,7 +383,8 @@ def man_on_horse():
 
 
 #drawing pictures
-turtle.tracer(0)
+turtle.tracer(1)
+turtle.speed(10)
 rocket()
 rabbit()
 robot()
