@@ -59,14 +59,14 @@ def oval(x, y, radius, angle, color):
     turtle.up()
 
     
-def octagon(x, y, side, angle, color):
+def hexagon(x, y, radius, angle, color):
     '''
-    Function, drawing octagon
+    Function, drawing hexagon
     :param x: upper left corner coordinate X
     :param y: upper left corner coordinate Y
-    :param side: side length of a octagon
+    :param radius: radius of the circumscribed circle of a hexagon
     :param angle: orientation change
-    :param color: color of a octagon frame and fill
+    :param color: color of a hexagon frame and fill
     :return: None
     ToDo: Evdischenko
     '''
@@ -74,28 +74,13 @@ def octagon(x, y, side, angle, color):
     turtle.up()
     turtle.setposition(x, y)
     turtle.color(color, color)
+
     turtle.down()
     turtle.begin_fill()
     turtle.right(angle)
-    turtle.forward(side)
-    turtle.right(360 / 8)
-    turtle.forward(side)
-    turtle.right(360 / 8)
-    turtle.forward(side)
-    turtle.right(360 / 8)
-    turtle.forward(side)
-    turtle.right(360 / 8)
-    turtle.forward(side)
-    turtle.right(360 / 8)
-    turtle.forward(side)
-    turtle.right(360 / 8)
-    turtle.forward(side)
-    turtle.right(360 / 8)
-    turtle.forward(side)
-    turtle.right(360 / 8)
+    turtle.circle(radius, 360, 6)
     turtle.end_fill()
     turtle.up()
-    
     
 def trapeze(x, y, side, angle, color):
     '''
@@ -112,6 +97,7 @@ def trapeze(x, y, side, angle, color):
     turtle.up()
     turtle.setposition(x, y)
     turtle.color(color, color)
+
     turtle.down()
     turtle.begin_fill()
     turtle.right(angle)
@@ -364,3 +350,45 @@ def bull():
     oval(-65, 280, 20, 90, 'grey')
     oval(5, 275, 20, -25, 'orange')
     turtle.up()
+    
+    
+    def sword():
+    '''
+    Function, drawing sword
+    :return: None
+    ToDo: Evdischenko
+    '''
+    turtle.speed(5)
+    trapeze(680, -20, 65, 60, '#fb9728')
+    hexagon(745, -60, 15, 0, '#374d5b')
+    hexagon(720, -55, 7, 0, '#2a6779')
+    hexagon(770, -55, 7, 0, '#4ab19c')
+    rectangle(800, -71, 70, 110, 90, '#4ab19c')
+    triangle90(870, -71, 70, 180, '#374d5b')
+    triangle90(620, -141, 70, 0, '#b5c3c6')
+    triangle90(800, -141, 110, 180, '#de584d')
+    triangle90(730, -210, 70, 0, '#2a6779')
+    triangle90(690, -250, 40, 0, '#feb836')
+    rectangle(800, -210, 40, 70, 90, '#b5c3c6')
+    triangle90(770, -251, 80, 180, '#fb9728')
+    oval(710, -380, 15, 45, '#de584d')
+    oval(720, -350, 7, 45, '#de584d')
+    pass
+
+
+def man_on_horse():
+    '''
+    Function, drawing sword
+    :return: None
+    ToDo: Evdischenko
+    '''
+    triangle90(800, 300, 55, 90, '#de584d')
+    triangle90(680, 180, 120, 0, '#2a6779')
+    triangle90(735, 125, 55, -90, '#374d5b')
+    triangle90(715, 215, 120, -180, '#4ab19c')
+    parallelogram(595, 215, 55, 100, -160, '#fb9728')
+    triangle90(626, 306, 90, 90, '#feb836')
+    circle(626, 305, 35, -15, '#b5c3c6')
+    trapeze(664, 384, 45, 220, '#374d5b')
+    hexagon(810, 270, 5, 0, '#374d5b')
+    pass
