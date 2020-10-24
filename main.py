@@ -81,8 +81,7 @@ def hexagon(x, y, radius, angle, color):
     turtle.circle(radius, 360, 6)
     turtle.end_fill()
     turtle.up()
-
-
+    
 def trapeze(x, y, side, angle, color):
     '''
     Function, drawing trapeze
@@ -263,7 +262,97 @@ def triangle90(x, y, side, angle, color):
     turtle.up()
 
 
-def sword():
+def rocket():
+    '''
+    Function, drawing rocket
+    :return: None
+    ToDo: Seledtsov
+    '''
+    turtle.shape('turtle')
+    turtle.speed(10)
+    triangle60(-830, -430, 140, 270, 'tomato')
+    rectangle(-828, -130, 200, 300, 0, 'darkgrey')
+    triangle60(-626, -290, 140, 90, 'tomato')
+    triangle60(-828, -128, 200, 0, 'tomato')
+    circle(-750, -200, 30, 300, 'white')
+    circle(-750, -300, 30, 300, 'white')
+    circle(-750, -400, 30, 300, 'white')
+    trapeze(-655, -492, 70, 240, 'orange')
+    turtle.home()
+    pass
+
+
+def rabbit():
+    '''
+    Function, drawing rabbit
+    :return: None
+    ToDo: Seledtsov
+    '''
+    turtle.shape('turtle')
+    turtle.speed(10)
+    triangle90(-828, 120, 100, 0, 'dodgerblue')
+    triangle90(-726, 195, 75, 90, 'purple')
+    triangle90(-691, 260, 140, 180, 'yellow')
+    triangle90(-831, 262, 140, 0, 'red')
+    triangle60(-688, 297, 70, 90, 'magenta')
+    square(-688, 437, 70, 0, 'orange')
+    parallelogram(-653, 439, 70, 70, 240, 'lime')
+    turtle.home()
+    pass
+  
+  
+  def robot():
+    '''
+    Function, drawing robot
+    :return: None
+    ToDo: Marinkin
+    '''
+    turtle.speed(10)
+    triangle60(-40, -500, 20, 0, 'blue')
+    triangle60(40,  -500, 20, 0, 'blue')
+    rectangle(-38, -415, 15, 70, 0, 'red')
+    turtle.up()
+    rectangle(42, -415, 15, 70, 0, 'red')
+    turtle.up()
+    square(-65, -270,150,0,"blue")
+    turtle.up()
+    rectangle(-137, -260, 290, 10, 0, 'red')
+    turtle.up()
+    circle(-100, -310, 20, 0, 'blue')
+    rectangle(-110, -310, 20, 50, 0, 'red')
+    circle(-100, -400, 20, 0, 'blue')
+    circle(120, -310, 20, 0, 'blue')
+    rectangle(110, -310, 20, 50, 0, 'red')
+    circle(120, -400, 20, 0, 'blue')
+    square(-15, -210, 50, 0, 'blue')
+    trapeze(49,-210, 40, 240, 'red' )
+    circle(-2, -230, 3, 0, "black")
+    circle(25, -230, 3, 0, "black")
+    square(10, -280, 8, 45, 'black')
+    square(10, -300, 8, 45, 'black')
+    square(10, -320, 8, 45, 'black')
+    square(10, -340, 8, 45, 'black')
+
+
+
+def bull():
+    '''
+    Function, drawing bull
+    :return: None
+    ToDo: Marinkin
+    '''
+    turtle.speed(10)
+    triangle90(0, 100, 100, -45, "black")
+    triangle90(129, 112, 80, -135, 'red')
+    triangle90(146, 100, 100, -90, 'black' )
+    parallelogram(147, 190, 65, 15, 50, 'yellow')
+    square(-62, 260, 60, 0, 'red')
+    oval(-65, 280, 20, 90, 'grey')
+    oval(5, 275, 20, -25, 'orange')
+    turtle.up()
+    
+    
+    def sword():
     '''
     Function, drawing sword
     :return: None
