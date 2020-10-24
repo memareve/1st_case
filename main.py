@@ -277,6 +277,11 @@ def triangle90(x, y, side, angle, color):
 
 
 def rocket():
+    '''
+    Function, drawing rocket
+    :return: None
+    ToDo: Seledtsov
+    '''
     turtle.shape('turtle')
     turtle.speed(10)
     triangle60(-830, -430, 140, 270, 'tomato')
@@ -291,16 +296,25 @@ def rocket():
 
 
 def rabbit():
+    '''
+    Function, drawing rabbit
+    :return: None
+    ToDo: Seledtsov
+    '''
     turtle.shape('turtle')
     turtle.speed(10)
-    triangle90(-960, 120, 100, 0, 'purple')
-    triangle90(-858, 195, 75, 90, 'magenta')
-
+    triangle90(-828, 120, 100, 0, 'dodgerblue')
+    triangle90(-726, 195, 75, 90, 'purple')
+    triangle90(-691, 260, 140, 180, 'yellow')
+    triangle90(-831, 262, 140, 0, 'red')
+    triangle60(-688, 297, 70, 90, 'magenta')
+    square(-688, 437, 70, 0, 'orangered')
+    parallelogram(-653, 439, 70, 70, 240, 'lime')
+    turtle.home()
     pass
 
 
-rabbit()
-turtle.up()
+#drawing images:
 rocket()
-
+rabbit()
 turtle.done()
