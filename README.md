@@ -6,7 +6,7 @@ list of all functions of simple figures:
 3.   *oval* -- овал
 4.   *triangle60* -- равносторонний треугольник
 5.   *rectangle* -- прямоугольник
-6.   *octagon* - восьмиугольник
+6.   *hexagon* - шестиугольник
 7.   *trapeze* -- трапеция
 8.   *parallelogram* -- параллелограм
 9.   *triangle90* -- прямоугольный треугольник
