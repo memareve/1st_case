@@ -275,7 +275,47 @@ def triangle90(x, y, side, angle, color):
     turtle.end_fill()
     turtle.up()
 
-def robot():
+
+def rocket():
+    '''
+    Function, drawing rocket
+    :return: None
+    ToDo: Seledtsov
+    '''
+    turtle.shape('turtle')
+    turtle.speed(10)
+    triangle60(-830, -430, 140, 270, 'tomato')
+    rectangle(-828, -130, 200, 300, 0, 'darkgrey')
+    triangle60(-626, -290, 140, 90, 'tomato')
+    triangle60(-828, -128, 200, 0, 'tomato')
+    circle(-750, -200, 30, 300, 'white')
+    circle(-750, -300, 30, 300, 'white')
+    circle(-750, -400, 30, 300, 'white')
+    trapeze(-655, -492, 70, 240, 'orange')
+    turtle.home()
+    pass
+
+
+def rabbit():
+    '''
+    Function, drawing rabbit
+    :return: None
+    ToDo: Seledtsov
+    '''
+    turtle.shape('turtle')
+    turtle.speed(10)
+    triangle90(-828, 120, 100, 0, 'dodgerblue')
+    triangle90(-726, 195, 75, 90, 'purple')
+    triangle90(-691, 260, 140, 180, 'yellow')
+    triangle90(-831, 262, 140, 0, 'red')
+    triangle60(-688, 297, 70, 90, 'magenta')
+    square(-688, 437, 70, 0, 'orange')
+    parallelogram(-653, 439, 70, 70, 240, 'lime')
+    turtle.home()
+    pass
+  
+  
+  def robot():
     '''
     Function, drawing robot
     :return: None
@@ -324,6 +364,3 @@ def bull():
     oval(-65, 280, 20, 90, 'grey')
     oval(5, 275, 20, -25, 'orange')
     turtle.up()
-
-
-bull()
