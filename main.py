@@ -1,5 +1,5 @@
 # Case-study #1
-# Developers: Marinkin O. (),
+# Developers: Marinkin O. (25%),
 # Seledtsov A. (35%),
 # Evdischenko M. (55%)
 
